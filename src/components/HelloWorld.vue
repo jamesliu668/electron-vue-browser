@@ -21,12 +21,13 @@ export default {
   },
 
   methods: {
-    ...mapActions('user/', ['init'])
+    ...mapActions('user/', ['init', 'getIP'])
   },
 
   created() {
     console.log('home init...')
     this.init()
+    this.getIP()
     console.log('home init finished')
   }
 }

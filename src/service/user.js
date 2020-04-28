@@ -1,8 +1,7 @@
-import axios from 'axios'
+import axios from '../libs/axios'
 
 export function getIP(params) {
-    var instance = axios.create()
-    return instance.request({
+    return axios.request({
         url: `http://101.132.238.47/ip.php`,
         params,
     })

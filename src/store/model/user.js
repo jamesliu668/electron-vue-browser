@@ -13,7 +13,7 @@ export default {
         },
 
         setIP(state, ip) {
-            state.ip = ip.data
+            state.ip = ip
         }
     },
 
